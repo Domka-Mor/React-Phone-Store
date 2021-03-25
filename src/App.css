@@ -1,0 +1,51 @@
+:root {
+  /*-- znamena,ze zadavas farbu ako variable, root: (reprezentuje index.html) ze vies pouzit tieto farby napriec celej app, cize globalne*/
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+
+
+body {
+  /*important preto, lebo bootstrap to ignoruje*/
+ font-family: 'Oswald', sans-serif !important; 
+ background: var(--mainWhite) !important;
+ color: var(--mainDark) !important;
+}
+
+.text-title {
+  /*tu netreba important, lebo to je moje, nie ako sucast stavby app ako bolo body*/
+  font-family: 'Permanent Marker',cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-blue {
+  color: var(--mainBlue);
+}
+
+.text-bright {
+  color: var(--lightBlue);
+}
+
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+}
+
+.btn-black:hover {
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
